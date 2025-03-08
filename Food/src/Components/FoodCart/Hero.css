@@ -1,0 +1,98 @@
+.FoodCart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  background-image: url(../Image/bg.png);
+  height: 600px;
+  
+  
+}
+
+.FoodCard {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  row-gap: 0px;
+
+}
+
+/* Individual Food Item */
+.food-item {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  border-radius: 50px;
+  background: radial-gradient(90.16% 143.01% at 15.32% 21.04%, 
+    rgba(165, 239, 255, 0.2) 0%, 
+    rgba(110, 191, 244, 0.045) 77.08%, 
+    rgba(70, 144, 213, 0) 100%);
+  backdrop-filter: blur(13px);
+  display: flex;
+  align-items: center;
+  /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); */
+  padding: 15px;
+  column-gap: 20px;
+}
+
+/* Food Image */
+.foodImage {
+  width: 133px;
+  height: 133px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 13px;
+  box-shadow: 0px 5.7px 9.5px rgba(0, 0, 0, 0.25);
+}
+
+.foodImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Food Info */
+.food_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 168px;
+  padding-left: 20px;
+  color: white;
+}
+
+.food_info h3 {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.food_info p {
+  font-size: 9px;
+  margin: 5px 0 0;
+  color: #ddd;
+}
+
+/* Price Button */
+.hero-price {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #FF4343;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: 200;
+  width: 50px;
+  
+}
+
+.hero-price:hover {
+  background: darkred;
+}
